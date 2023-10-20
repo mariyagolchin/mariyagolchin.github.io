@@ -1,0 +1,109 @@
+html {
+	scroll-behavior: smooth;
+  }
+body {
+	font-size: 14px;
+	padding: 45px 10px;
+	font-family: Segoe UI, Tahoma;
+	max-width: 800px;
+	margin: auto;
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+	color: #4183C4;
+}
+a:hover {
+	color: #064d95;
+}
+h1 {
+	font-size: 35px;
+	margin: 0;
+	text-align: center;
+}
+h2 {
+	font-size: 20px;
+	padding: 50px 0 5px 0;
+	color: #4183C4;
+	border-bottom: 1px solid #eee;
+}
+h3 {
+	font-size: 16px;
+	margin: 10px 0 0 5px;
+	margin-inline-start: 0;
+}
+h3 small{
+	font-weight: 400;
+}
+p{
+	margin: 0 10px;
+}
+ul, ol{
+	margin: 0 5px;
+}
+
+ol{
+	padding-inline-start: 10px;
+}
+.by{
+	font-style: italic ;
+}
+.by::before{
+	content: "by: ";
+}
+.fixedmenu{
+	top: 0;
+	right: 0;
+	left: auto;
+	bottom: auto;
+	position: fixed;
+	z-index: 101;
+	margin: auto;
+	width: 100%;
+	background-color: #444;
+	text-align: center;
+	padding:10px;
+}
+.fixedmenu .item{
+	display: inline;
+	padding: 0 12px;
+}
+.fixedmenu a {
+	color: #eee;
+}
+.fixedmenu .activeitem{
+	display: inline;
+	padding:20px;
+}
+.activeitem a{
+	font-weight:bold;
+}
+.ulcenter{
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+.dimmed{
+	color: #aaa;
+}
+.container{
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+.footer {
+	margin-top: 40px;
+	text-align: center;
+	color: #9aa;
+}
+@media only screen and (max-width:600px) {
+	.fixedmenu .item {
+		display: none;
+	}
+}
+@media only screen and (min-width:600px) {
+	.fixedmenu .item {
+		display: inline;
+	}
+}
